@@ -7,6 +7,8 @@ namespace System.Text.Example
     {
         public static void Main(string[] args)
         {
+            #region StringBuilder
+
             StringBuilder _stringBuilder = new StringBuilder();
 
             _stringBuilder.Append("Carlos ");
@@ -22,8 +24,17 @@ namespace System.Text.Example
             //Replace 
             _stringBuilder.Replace(" ", "-");
 
+            //Clear
+            //_stringBuilder.Clear();
+
             Console.WriteLine(_stringBuilder);
             Console.ReadKey();
+
+            #endregion
+
+
+
+
         }
     }
 }
