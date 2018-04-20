@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading;
+using System.Globalization;
 
 namespace Framework
 {
@@ -6,7 +8,15 @@ namespace Framework
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            CultureInfo cultureInfUs = new CultureInfo("en-US");
+
+            CultureInfo cultureInfoCurrent = Thread.CurrentThread.CurrentCulture;
+
+            Console.WriteLine(Framework.Main.LION);
+            Console.ReadKey();
+         
+
         }
     }
 }
