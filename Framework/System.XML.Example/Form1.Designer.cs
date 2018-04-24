@@ -31,6 +31,7 @@
             this.btnsalvar = new System.Windows.Forms.Button();
             this.textnome = new System.Windows.Forms.TextBox();
             this.textTelefone = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnsalvar
@@ -57,11 +58,21 @@
             this.textTelefone.Size = new System.Drawing.Size(100, 20);
             this.textTelefone.TabIndex = 2;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(380, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(316, 274);
+            this.ClientSize = new System.Drawing.Size(656, 365);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textTelefone);
             this.Controls.Add(this.textnome);
             this.Controls.Add(this.btnsalvar);
@@ -77,6 +88,7 @@
         private Windows.Forms.Button btnsalvar;
         private Windows.Forms.TextBox textnome;
         private Windows.Forms.TextBox textTelefone;
+        private Windows.Forms.Label label1;
     }
 }
 
